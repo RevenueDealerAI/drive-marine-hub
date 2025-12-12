@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Cog, Waves, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Cog, Waves, Phone, Mail, MapPin } from "lucide-react";
 
 const footerLinks = {
   shop: [
@@ -8,78 +8,35 @@ const footerLinks = {
     { name: "Marine Engines", href: "/marine" },
     { name: "Transmissions", href: "/trucks" },
   ],
-  // support: [
-
-  // ],
   legal: [
     { name: "Privacy Policy", href: "/privacy-policy", isRoute: true },
     { name: "Terms & Conditions", href: "/terms-and-conditions", isRoute: true }
   ],
 };
 
-const socialLinks = [
-
-];
-
 export const Footer = () => {
   return (
-    <footer className="bg-navy-dark text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <footer className="bg-navy-dark text-primary-foreground overflow-hidden">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company */}
-          <div className="col-span-2 md:col-span-3 lg:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-1">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-3 mb-4">
-              <div className="relative flex items-center">
-                {/* Engine Gear */}
-                <div className="relative">
-                  <Cog className="w-10 h-10 text-primary" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-3 h-3 bg-white dark:bg-secondary rounded-full" />
-                  </div>
-                </div>
-                {/* Wave for Marine */}
-                <Waves className="w-6 h-6 text-secondary dark:text-primary/80 -ml-1" />
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-1">
+                <Cog className="w-8 h-8 text-primary" />
+                <Waves className="w-6 h-6 text-secondary-glow" />
               </div>
               <div className="flex flex-col">
-                <span className="text-base md:text-lg font-bold leading-tight tracking-tight">
+                <span className="text-base font-bold leading-tight">
                   DiscountAutoParts
                 </span>
-                <span className="text-xs font-bold text-primary tracking-wider">USA</span>
+                <span className="text-xs text-primary font-semibold">USA</span>
               </div>
-            </a>
+            </Link>
             <p className="text-primary-foreground/60 text-sm mb-4">
               Quality Engines. Guaranteed Fitment. Nationwide Delivery.
             </p>
-            {/* Social */}
-            <div className="flex gap-3">
-              {socialLinks.map((social, i) => (
-                <a
-                  key={i}
-                  href={social.href}
-                  className="w-10 h-10 bg-primary-foreground/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-          </div>
-
-           {/* Support */}
-           <div>
-            <h4 className="font-bold mb-4"></h4>
-            {/* <ul className="space-y-2">
-              {footerLinks.support.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul> */}
           </div>
 
           {/* Shop */}
@@ -88,6 +45,40 @@ export const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.shop.map((link) => (
                 <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="font-bold mb-4">Legal</h4>
+            <ul className="space-y-2">
+              {footerLinks.legal.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="font-bold mb-4">Legal</h4>
+            <ul className="space-y-2">
+              {footerLinks.legal.map((link) => (
+                <li key={link.name}>
                   <a
                     href={link.href}
                     className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
@@ -99,36 +90,8 @@ export const Footer = () => {
             </ul>
           </div>
 
-         
-
-          {/* Legal */}
-          <div>
-            <h4 className="font-bold mb-4">Legal</h4>
-            <ul className="space-y-2">
-              {footerLinks.legal.map((link) => (
-                <li key={link.name}>
-                  {link.isRoute ? (
-                    <Link
-                      to={link.href}
-                      className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  ) : (
-                    <a
-                      href={link.href}
-                      className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact */}
-          <div>
+          <div className="sm:col-span-2 lg:col-span-1">
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-3">
               <li>
@@ -136,17 +99,17 @@ export const Footer = () => {
                   href="tel:888-555-1234"
                   className="flex items-center gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 flex-shrink-0" />
                   (888) 555-1234
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:info@discountautopartsusa.com"
-                  className="flex items-center gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                  className="flex items-start gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors break-all"
                 >
-                  <Mail className="w-4 h-4" />
-                  info@discountautopartsusa.com
+                  <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                  <span className="break-all">info@discountautopartsusa.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-primary-foreground/60">
@@ -159,11 +122,11 @@ export const Footer = () => {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col items-center gap-4 text-center">
             <p className="text-sm text-primary-foreground/50">
               © 2024 DiscountAutoPartsUSA.com | All Rights Reserved
             </p>
-            <div className="flex items-center gap-4 text-sm text-primary-foreground/50">
+            <div className="flex flex-wrap justify-center items-center gap-2 text-sm text-primary-foreground/50">
               <span className="flex items-center gap-1">🔒 SSL Secure</span>
               <span>•</span>
               <span>BBB Accredited</span>
