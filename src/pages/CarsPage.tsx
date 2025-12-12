@@ -50,7 +50,6 @@ const CarsPage = () => {
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-secondary via-accent to-secondary overflow-hidden">
           <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-white/5 to-transparent" />
-          
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
