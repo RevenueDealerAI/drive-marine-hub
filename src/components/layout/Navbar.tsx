@@ -37,8 +37,8 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-secondary/95 backdrop-blur-md shadow-elevated"
-          : "bg-secondary"
+          ? "bg-white/80 dark:bg-secondary/80 backdrop-blur-xl shadow-lg border-b border-border/50"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -50,14 +50,16 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
               <div className="relative">
                 <Cog className="w-10 h-10 text-primary" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-3 h-3 bg-secondary rounded-full" />
+                  <div className="w-3 h-3 bg-white dark:bg-secondary rounded-full" />
                 </div>
               </div>
-              {/* Wave/Anchor for Marine */}
-              <Waves className="w-6 h-6 text-primary/80 -ml-1" />
+              {/* Wave for Marine */}
+              <Waves className="w-6 h-6 text-secondary dark:text-primary/80 -ml-1" />
             </div>
             <div className="flex flex-col">
-              <span className="text-base md:text-lg font-bold text-white leading-tight tracking-tight">
+              <span className={`text-base md:text-lg font-bold leading-tight tracking-tight ${
+                isScrolled ? "text-foreground" : "text-white"
+              }`}>
                 DiscountAutoParts
               </span>
               <span className="text-xs font-bold text-primary tracking-wider">USA</span>
@@ -73,7 +75,9 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
                 className={`text-sm font-medium transition-colors relative group ${
                   isActive(item.href) 
                     ? "text-primary" 
-                    : "text-white/90 hover:text-primary"
+                    : isScrolled 
+                      ? "text-foreground/80 hover:text-primary"
+                      : "text-white/90 hover:text-white"
                 }`}
               >
                 {item.name}
@@ -88,7 +92,11 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:888-555-1234"
-              className="flex items-center gap-2 text-white font-bold hover:text-primary transition-colors"
+              className={`flex items-center gap-2 font-bold transition-colors ${
+                isScrolled 
+                  ? "text-foreground hover:text-primary" 
+                  : "text-white hover:text-primary"
+              }`}
             >
               <Phone className="w-5 h-5 text-primary" />
               <span>(888) 555-1234</span>
@@ -101,7 +109,7 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-white"
+            className={`lg:hidden p-2 ${isScrolled ? "text-foreground" : "text-white"}`}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -115,7 +123,7 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-secondary border-t border-white/10"
+            className="lg:hidden bg-white/95 dark:bg-secondary/95 backdrop-blur-xl border-t border-border/50"
           >
             <div className="container mx-auto px-4 py-4">
               <nav className="flex flex-col gap-2">
@@ -126,8 +134,8 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`flex items-center gap-3 p-3 rounded-lg transition-colors ${
                       isActive(item.href)
-                        ? "bg-primary/20 text-primary"
-                        : "text-white hover:bg-white/10"
+                        ? "bg-primary/10 text-primary"
+                        : "text-foreground hover:bg-muted"
                     }`}
                   >
                     <item.icon className="w-5 h-5 text-primary" />
@@ -135,10 +143,10 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
                   </Link>
                 ))}
               </nav>
-              <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-3">
+              <div className="mt-4 pt-4 border-t border-border flex flex-col gap-3">
                 <a
                   href="tel:888-555-1234"
-                  className="flex items-center justify-center gap-2 p-3 bg-white/10 text-white rounded-lg font-bold"
+                  className="flex items-center justify-center gap-2 p-3 bg-secondary/10 text-foreground rounded-lg font-bold"
                 >
                   <Phone className="w-5 h-5 text-primary" />
                   <span>(888) 555-1234</span>
