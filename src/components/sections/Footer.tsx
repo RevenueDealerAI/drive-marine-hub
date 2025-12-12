@@ -1,30 +1,24 @@
-import { Settings, Anchor, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Cog, Waves, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const footerLinks = {
   shop: [
-    { name: "Car Engines", href: "#cars" },
-    { name: "Truck Engines", href: "#trucks" },
-    { name: "Marine Engines", href: "#marine" },
-    { name: "Transmissions", href: "#" },
+    { name: "Car Engines", href: "/cars" },
+    { name: "Truck Engines", href: "/trucks" },
+    { name: "Marine Engines", href: "/marine" },
+    { name: "Transmissions", href: "/trucks" },
   ],
-  support: [
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Warranty Information", href: "#" },
-    { name: "Shipping Policy", href: "#" },
-    { name: "Returns & Exchanges", href: "#" },
-  ],
+  // support: [
+
+  // ],
   legal: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms & Conditions", href: "#" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Privacy Policy", href: "/privacy-policy", isRoute: true },
+    { name: "Terms & Conditions", href: "/terms-and-conditions", isRoute: true }
   ],
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#" },
-  { icon: Twitter, href: "#" },
-  { icon: Instagram, href: "#" },
-  { icon: Linkedin, href: "#" },
+
 ];
 
 export const Footer = () => {
@@ -35,16 +29,23 @@ export const Footer = () => {
           {/* Company */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-2 mb-4">
-              <div className="flex items-center gap-1">
-                <Settings className="w-8 h-8 text-primary" />
-                <Anchor className="w-6 h-6 text-secondary-glow" />
+            <a href="#home" className="flex items-center gap-3 mb-4">
+              <div className="relative flex items-center">
+                {/* Engine Gear */}
+                <div className="relative">
+                  <Cog className="w-10 h-10 text-primary" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-3 h-3 bg-white dark:bg-secondary rounded-full" />
+                  </div>
+                </div>
+                {/* Wave for Marine */}
+                <Waves className="w-6 h-6 text-secondary dark:text-primary/80 -ml-1" />
               </div>
               <div className="flex flex-col">
-                <span className="text-base font-bold leading-tight">
+                <span className="text-base md:text-lg font-bold leading-tight tracking-tight">
                   DiscountAutoParts
                 </span>
-                <span className="text-xs text-primary font-semibold">USA</span>
+                <span className="text-xs font-bold text-primary tracking-wider">USA</span>
               </div>
             </a>
             <p className="text-primary-foreground/60 text-sm mb-4">
@@ -64,6 +65,23 @@ export const Footer = () => {
             </div>
           </div>
 
+           {/* Support */}
+           <div>
+            <h4 className="font-bold mb-4"></h4>
+            {/* <ul className="space-y-2">
+              {footerLinks.support.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul> */}
+          </div>
+
           {/* Shop */}
           <div>
             <h4 className="font-bold mb-4">Shop</h4>
@@ -81,22 +99,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Support */}
-          <div>
-            <h4 className="font-bold mb-4">Support</h4>
-            <ul className="space-y-2">
-              {footerLinks.support.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+         
 
           {/* Legal */}
           <div>
@@ -104,12 +107,21 @@ export const Footer = () => {
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </a>
+                  {link.isRoute ? (
+                    <Link
+                      to={link.href}
+                      className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-sm text-primary-foreground/60 hover:text-primary transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

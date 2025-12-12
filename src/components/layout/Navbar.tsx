@@ -8,9 +8,7 @@ const navItems = [
   { name: "Home", href: "/", icon: Home },
   { name: "Cars", href: "/cars", icon: Car },
   { name: "Trucks", href: "/trucks", icon: Truck },
-  { name: "Marine", href: "/marine", icon: Anchor },
-  { name: "How It Works", href: "/#how-it-works", icon: HelpCircle },
-  { name: "Contact", href: "/#contact", icon: Mail },
+  { name: "Marine", href: "/marine", icon: Anchor }
 ];
 
 export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
