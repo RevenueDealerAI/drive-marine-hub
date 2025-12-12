@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const currentYear = new Date().getFullYear();
 const years = Array.from({ length: 30 }, (_, i) => currentYear - i);
@@ -37,26 +38,48 @@ export const QuoteFormSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Quote Request Submitted!",
-      description: "We'll get back to you within 60 seconds during business hours.",
-    });
-    
-    setIsSubmitting(false);
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      vin: "",
-      year: "",
-      make: "",
-      model: "",
-      partNeeded: "engine",
-      notes: "",
-    });
+    try {
+      const { error } = await supabase.from("quote_requests").insert({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        vin: formData.vin || null,
+        year: formData.year || null,
+        make: formData.make || null,
+        model: formData.model || null,
+        part_type: formData.partNeeded,
+        message: formData.notes || null,
+        source_page: "homepage",
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Quote Request Submitted!",
+        description: "We'll get back to you within 60 seconds during business hours.",
+      });
+      
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        vin: "",
+        year: "",
+        make: "",
+        model: "",
+        partNeeded: "engine",
+        notes: "",
+      });
+    } catch (error) {
+      console.error("Error submitting quote:", error);
+      toast({
+        title: "Error",
+        description: "Failed to submit quote. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
