@@ -50,5 +50,5 @@ jobs:
         username: ${{ secrets.VPS_USER }}
         key: ${{ secrets.VPS_SSH_KEY }}
         source: "dist/*"
-        target: "/home/discountautopartsusa/public_html/"
+        target: "/home/discountautopart/public_html/"
         strip_components: 1
