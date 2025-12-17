@@ -1,0 +1,54 @@
+name: Deploy React App to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout code
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    # 2. Set up Node
+    - name: Install Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    # 3. Install dependencies
+    - name: Install dependencies
+      run: npm install
+
+    # 4. Build React/Vite app
+    - name: Build React App
+      env:
+        VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+        VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+      run: npm run build
+
+
+    # 5. Create SSH key file for clean command
+    - name: Create SSH key file
+      run: |
+        echo "${{ secrets.VPS_SSH_KEY }}" > id_rsa
+        chmod 600 id_rsa
+
+    # 6. CLEAN OLD FILES from public_html
+    - name: Clean old build
+      run: ssh -i id_rsa -o StrictHostKeyChecking=no root@${{ secrets.VPS_HOST }} "rm -rf /home/discountautopartsusa/public_html/*"
+
+    # 7. Copy new build to server
+    - name: Copy build to server
+      uses: appleboy/scp-action@v0.1.7
+      with:
+        host: ${{ secrets.VPS_HOST }}
+        username: ${{ secrets.VPS_USER }}
+        key: ${{ secrets.VPS_SSH_KEY }}
+        source: "dist/*"
+        target: "/home/discountautopartsusa/public_html/"
+        strip_components: 1

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Award, Users, MapPin, Wrench } from "lucide-react";
+import hero from "./../../assets/heroimg.jpg"
+
 
 export const AboutSection = () => {
   return (
@@ -59,15 +61,13 @@ export const AboutSection = () => {
             <div className="aspect-square bg-gradient-to-br from-navy-dark to-secondary rounded-2xl overflow-hidden relative">
               {/* Decorative elements */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="grid grid-cols-3 gap-4 p-8">
-                  {[...Array(9)].map((_, i) => (
+                <div className=" p-8">
                     <div
-                      key={i}
-                      className="w-16 h-16 md:w-20 md:h-20 bg-primary/20 rounded-xl flex items-center justify-center"
+                      className="w-26 h-26 flex items-center justify-center"
                     >
-                      <Wrench className="w-8 h-8 text-primary/50" />
+                      <img src={hero} alt="Photo by Joshua Köller" className="rounded-lg md:mb-20"></img>
                     </div>
-                  ))}
+
                 </div>
               </div>
               

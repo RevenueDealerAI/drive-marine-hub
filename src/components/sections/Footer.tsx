@@ -112,10 +112,10 @@ export const Footer = () => {
                   <span className="break-all">info@discountautopartsusa.com</span>
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-sm text-primary-foreground/60">
+              {/* <li className="flex items-start gap-2 text-sm text-primary-foreground/60">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>123 Auto Drive<br />Detroit, MI 48201</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -124,7 +124,7 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col items-center gap-4 text-center">
             <p className="text-sm text-primary-foreground/50">
-              © 2024 DiscountAutoPartsUSA.com | All Rights Reserved
+              © {new Date().getFullYear()} DiscountAutoPartsUSA.com | All Rights Reserved
             </p>
             <div className="flex flex-wrap justify-center items-center gap-2 text-sm text-primary-foreground/50">
               <span className="flex items-center gap-1">🔒 SSL Secure</span>

@@ -131,7 +131,7 @@ const PrivacyPolicy = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-white/80 mb-4">
-                Last Updated: December 2024
+                Last Updated: December 2025
               </p>
               
               <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
