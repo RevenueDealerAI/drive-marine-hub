@@ -27,7 +27,7 @@ export const HeroSection = ({ onOpenQuote }: HeroSectionProps) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6"
+            className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 text-center"
           >
             <BadgeCheck className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary-foreground/90">America's Trusted Parts Supplier</span>
@@ -110,7 +110,7 @@ export const HeroSection = ({ onOpenQuote }: HeroSectionProps) => {
             <div className="hidden sm:block w-px h-6 bg-primary-foreground/20" />
 
             {/* Trust badges */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
               <div className="flex items-center gap-1.5">
                 <Truck className="w-4 h-4 text-primary" />
                 <span className="text-sm">Free Shipping</span>
