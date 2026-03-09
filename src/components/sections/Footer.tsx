@@ -96,11 +96,11 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="tel:888-555-1234"
+                  href="tel:18886679660"
                   className="flex items-center gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors"
                 >
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  (888) 555-1234
+                  (888) 667-9660
                 </a>
               </li>
               <li>

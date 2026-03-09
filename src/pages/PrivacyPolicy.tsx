@@ -189,16 +189,17 @@ const PrivacyPolicy = () => {
                   <span>privacy@discountautopartsusa.com</span>
                 </a>
                 <a
-                  href="tel:888-555-1234"
+                  href="tel:18886679660"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>(888) 555-1234</span>
+                  <span>(888) 667-9660</span>
                 </a>
                 <p className="text-sm text-foreground/60 mt-4">
                   DiscountAutoPartsUSA.com<br />
-                  123 Auto Drive<br />
-                  Detroit, MI 48201
+                  30 N Gould St<br />
+                  Ste R<br />
+                  Sheridan, WY, 82801, USA
                 </p>
               </div>
             </motion.div>

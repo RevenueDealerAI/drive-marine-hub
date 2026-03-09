@@ -295,7 +295,7 @@ export const QuoteModal = ({ isOpen, onClose, sourcePage = "modal" }: QuoteModal
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Phone className="w-4 h-4" />
-                  <span>(888) 555-1234</span>
+                  <span>(888) 667-9660</span>
                 </div>
               </div>
             </form>

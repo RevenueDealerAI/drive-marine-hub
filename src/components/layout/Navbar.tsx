@@ -89,7 +89,7 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
           {/* CTA Section */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:888-555-1234"
+              href="tel:18886679660"
               className={`flex items-center gap-2 font-bold transition-colors ${
                 isScrolled 
                   ? "text-foreground hover:text-primary" 
@@ -97,7 +97,7 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
               }`}
             >
               <Phone className="w-5 h-5 text-primary" />
-              <span>(888) 555-1234</span>
+              <span>(888) 667-9660</span>
             </a>
             <Button variant="hero" size="lg" onClick={onOpenQuote}>
               Get Quote
@@ -143,11 +143,11 @@ export const Navbar = ({ onOpenQuote }: { onOpenQuote: () => void }) => {
               </nav>
               <div className="mt-4 pt-4 border-t border-border flex flex-col gap-3">
                 <a
-                  href="tel:888-555-1234"
+                  href="tel:18886679660"
                   className="flex items-center justify-center gap-2 p-3 bg-secondary/10 text-foreground rounded-lg font-bold"
                 >
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>(888) 555-1234</span>
+                  <span>(888) 667-9660</span>
                 </a>
                 <Button variant="hero" size="lg" onClick={() => { onOpenQuote(); setIsMobileMenuOpen(false); }} className="w-full">
                   Get Free Quote

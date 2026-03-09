@@ -75,7 +75,7 @@ export const HeroSection = ({ onOpenQuote }: HeroSectionProps) => {
               variant="hero"
               size="xl"
               className="group"
-              onClick={() => window.location.href = 'tel:888-555-1234'}
+              onClick={() => window.location.href = 'tel:18886679660'}
             >
               <Phone className="w-5 h-5 group-hover:animate-pulse" />
               Call Now for Instant Quote

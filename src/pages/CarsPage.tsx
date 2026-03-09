@@ -78,7 +78,7 @@ const CarsPage = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
-                  <a href="tel:888-555-1234">
+                  <a href="tel:18886679660">
                     <Phone className="w-5 h-5 mr-2" />
                     Call Now for Instant Quote
                   </a>
@@ -240,9 +240,9 @@ const CarsPage = () => {
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" size="lg" className="text-lg" asChild>
-                <a href="tel:888-555-1234">
+                <a href="tel:18886679660">
                   <Phone className="w-5 h-5 mr-2" />
-                  Call (888) 555-1234
+                  Call (888) 667-9660
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="text-lg bg-white/10 border-white text-white hover:bg-white hover:text-primary" onClick={() => setIsQuoteModalOpen(true)}>

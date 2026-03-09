@@ -281,7 +281,7 @@ export const QuoteFormSection = () => {
               </div>
               <div className="flex items-center gap-1.5">
                 <Phone className="w-4 h-4" />
-                <span>Or Call (888) 555-1234</span>
+                <span>Or Call (888) 667-9660</span>
               </div>
             </div>
           </motion.form>

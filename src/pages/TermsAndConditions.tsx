@@ -138,8 +138,8 @@ const TermsAndConditions = () => {
       content: [
         "If you have any questions about these Terms and Conditions, please contact us:",
         "Email: legal@discountautopartsusa.com",
-        "Phone: (888) 555-1234",
-        "Address: 123 Auto Drive, Detroit, MI 48201"
+        "Phone: (888) 667-9660",
+        "Address: 30 N Gould St, Ste R, Sheridan, WY, 82801, USA"
       ]
     }
   ];
@@ -227,16 +227,17 @@ const TermsAndConditions = () => {
                   <span>legal@discountautopartsusa.com</span>
                 </a>
                 <a
-                  href="tel:888-555-1234"
+                  href="tel:18886679660"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>(888) 555-1234</span>
+                  <span>(888) 667-9660</span>
                 </a>
                 <p className="text-sm text-foreground/60 mt-4">
                   DiscountAutoPartsUSA.com<br />
-                  123 Auto Drive<br />
-                  Detroit, MI 48201
+                  30 N Gould St<br />
+                  Ste R<br />
+                  Sheridan, WY, 82801, USA
                 </p>
               </div>
             </motion.div>
