@@ -5,6 +5,11 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { QuoteModal } from "@/components/QuoteModal";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
+import { TimedDiscountPopup } from "@/components/TimedDiscountPopup";
+import { ClosingCTASection } from "@/components/sections/ClosingCTASection";
+import { TrustBadgeSection } from "@/components/sections/TrustBadgeSection";
+import { ConversionMessageSection } from "@/components/sections/ConversionMessageSection";
 import { Button } from "@/components/ui/button";
 
 const engineBrands = [
