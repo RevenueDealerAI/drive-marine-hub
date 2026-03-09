@@ -204,11 +204,11 @@ const PrivacyPolicy = () => {
               </p>
               <div className="space-y-3">
                 <a
-                  href="mailto:privacy@discountautopartsusa.com"
+                  href="mailto:support@discountautopartusa.com"
                   className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>privacy@discountautopartsusa.com</span>
+                  <span>support@discountautopartusa.com</span>
                 </a>
                 <a
                   href="tel:18886679660"
