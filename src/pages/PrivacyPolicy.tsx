@@ -19,7 +19,8 @@ const PrivacyPolicy = () => {
         "• Vehicle information (VIN, make, model, year)",
         "• Payment information (processed securely through third-party payment processors)",
         "• Communication preferences and customer service interactions",
-        "• Information automatically collected when you visit our website, including IP address, browser type, device information, and usage patterns"
+        "• Information automatically collected when you visit our website, including IP address, browser type, device information, and usage patterns",
+        "• Data collected through cookies, web beacons, and tracking technologies including Microsoft Advertising Universal Event Tracking (UET) tags"
       ]
     },
     {
@@ -31,8 +32,23 @@ const PrivacyPolicy = () => {
         "• Communicate with you about your orders, products, services, and promotional offers",
         "• Provide customer support and respond to your inquiries",
         "• Improve our website, products, and services",
+        "• Measure advertising performance through Microsoft Advertising (Bing Ads) conversion tracking",
+        "• Create remarketing audiences to show you relevant ads on the Microsoft Search Network and partner sites",
         "• Detect, prevent, and address technical issues and fraudulent activity",
         "• Comply with legal obligations and enforce our terms and conditions"
+      ]
+    },
+    {
+      title: "Microsoft Advertising & Bing Ads Disclosure",
+      icon: Eye,
+      content: [
+        "We use Microsoft Advertising (formerly Bing Ads) services on our website, including:",
+        "• Universal Event Tracking (UET): We use Microsoft's UET tag to track website activity after you click on our ads served through the Microsoft Search Network. This helps us measure ad performance and optimize our campaigns.",
+        "• Remarketing: We may use Microsoft Advertising remarketing to show targeted ads to users who have previously visited our website. This means you may see our ads on Bing, MSN, and other Microsoft partner websites based on your past interactions with our site.",
+        "• Conversion Tracking: We track certain actions on our website (such as form submissions and purchases) to measure the effectiveness of our advertising campaigns.",
+        "• Microsoft collects data through cookies and similar technologies placed via the UET tag, including pages visited, time spent on pages, and actions taken. This data is processed by Microsoft in accordance with their privacy policy.",
+        "• You can opt out of personalized advertising from Microsoft by visiting: https://account.microsoft.com/privacy/ad-settings",
+        "• For more information about Microsoft's data practices, please visit Microsoft's Privacy Statement at: https://privacy.microsoft.com/en-us/privacystatement"
       ]
     },
     {
@@ -41,6 +57,7 @@ const PrivacyPolicy = () => {
       content: [
         "We do not sell your personal information. We may share your information only in the following circumstances:",
         "• With service providers who assist us in operating our business (shipping companies, payment processors)",
+        "• With advertising partners such as Microsoft Advertising for conversion tracking and remarketing purposes",
         "• When required by law or to protect our rights and safety",
         "• In connection with a business transfer or merger",
         "• With your explicit consent"
@@ -67,7 +84,9 @@ const PrivacyPolicy = () => {
         "• Correct inaccurate or incomplete information",
         "• Request deletion of your personal information",
         "• Opt-out of marketing communications",
+        "• Opt-out of personalized advertising from Microsoft at https://account.microsoft.com/privacy/ad-settings",
         "• Disable cookies through your browser settings",
+        "• Use the Network Advertising Initiative opt-out page at https://optout.networkadvertising.org",
         "To exercise these rights, please contact us using the information provided below."
       ]
     },
@@ -78,9 +97,12 @@ const PrivacyPolicy = () => {
         "We use cookies and similar tracking technologies to:",
         "• Remember your preferences and settings",
         "• Analyze website traffic and usage patterns",
+        "• Track conversions from Microsoft Advertising (Bing Ads) campaigns via UET tags",
+        "• Enable remarketing to serve relevant ads across the Microsoft Search Network",
         "• Provide personalized content and advertisements",
         "• Improve website functionality and user experience",
-        "You can control cookies through your browser settings, but this may affect website functionality."
+        "Types of cookies we use include: essential cookies, analytics cookies, and advertising cookies (including Microsoft Advertising cookies).",
+        "You can control cookies through your browser settings, but this may affect website functionality and ad personalization."
       ]
     },
     {
