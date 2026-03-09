@@ -31,6 +31,19 @@ const TermsAndConditions = () => {
       ]
     },
     {
+      title: "Advertising and Tracking",
+      icon: AlertCircle,
+      content: [
+        "Our website uses advertising and tracking technologies, including Microsoft Advertising (Bing Ads):",
+        "• We use Microsoft Universal Event Tracking (UET) tags to measure ad performance and track conversions",
+        "• We may use remarketing features to display targeted advertisements to you on the Microsoft Search Network and partner sites",
+        "• By using this website, you acknowledge that cookies and tracking pixels may be placed on your device for advertising and analytics purposes",
+        "• You may opt out of personalized advertising by visiting Microsoft's ad settings at https://account.microsoft.com/privacy/ad-settings",
+        "• Our use of Microsoft Advertising is subject to Microsoft's Advertising Agreement and Privacy Statement",
+        "• We do not guarantee the accuracy or placement of advertisements served through third-party networks"
+      ]
+    },
+    {
       title: "Product Information and Pricing",
       icon: AlertCircle,
       content: [
@@ -102,6 +115,7 @@ const TermsAndConditions = () => {
         "• We are not liable for indirect, incidental, or consequential damages",
         "• We are not responsible for damages resulting from improper installation or use",
         "• We are not liable for delays in delivery beyond our reasonable control",
+        "• We are not responsible for any losses related to third-party advertising platforms including Microsoft Advertising",
         "• Some jurisdictions do not allow limitations of liability, so some of these limitations may not apply to you"
       ]
     },
