@@ -5,6 +5,11 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { QuoteModal } from "@/components/QuoteModal";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { ExitIntentPopup } from "@/components/ExitIntentPopup";
+import { TimedDiscountPopup } from "@/components/TimedDiscountPopup";
+import { ClosingCTASection } from "@/components/sections/ClosingCTASection";
+import { TrustBadgeSection } from "@/components/sections/TrustBadgeSection";
+import { ConversionMessageSection } from "@/components/sections/ConversionMessageSection";
 import { Button } from "@/components/ui/button";
 
 const engineBrands = [
@@ -280,11 +285,16 @@ const MarinePage = () => {
             </div>
           </div>
         </section>
+        <ClosingCTASection onOpenQuote={() => setIsQuoteModalOpen(true)} />
+        <TrustBadgeSection />
+        <ConversionMessageSection />
       </main>
 
       <Footer />
       <QuoteModal isOpen={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
       <FloatingCTA onOpenQuote={() => setIsQuoteModalOpen(true)} />
+      <ExitIntentPopup onOpenQuote={() => setIsQuoteModalOpen(true)} />
+      <TimedDiscountPopup onOpenQuote={() => setIsQuoteModalOpen(true)} />
     </div>
   );
 };
