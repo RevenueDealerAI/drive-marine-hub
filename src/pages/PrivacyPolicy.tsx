@@ -209,7 +209,6 @@ const PrivacyPolicy = () => {
                 >
                   <Mail className="w-5 h-5 text-primary" />
                   <span>support@discountautopartusa.com</span>
-                  <span>privacy@discountautopartsusa.com</span>
                 </a>
                 <a
                   href="tel:18886679660"

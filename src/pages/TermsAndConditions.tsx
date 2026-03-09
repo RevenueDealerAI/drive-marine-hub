@@ -151,7 +151,7 @@ const TermsAndConditions = () => {
       icon: Mail,
       content: [
         "If you have any questions about these Terms and Conditions, please contact us:",
-        "Email: legal@discountautopartsusa.com",
+        "Email: support@discountautopartusa.com",
         "Phone: (888) 667-9660",
         "Address: 30 N Gould St, Ste R, Sheridan, WY, 82801, USA"
       ]
