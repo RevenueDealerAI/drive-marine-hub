@@ -256,11 +256,16 @@ const CarsPage = () => {
             </div>
           </div>
         </section>
+        <ClosingCTASection onOpenQuote={() => setIsQuoteModalOpen(true)} />
+        <TrustBadgeSection />
+        <ConversionMessageSection />
       </main>
 
       <Footer />
       <QuoteModal isOpen={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
       <FloatingCTA onOpenQuote={() => setIsQuoteModalOpen(true)} />
+      <ExitIntentPopup onOpenQuote={() => setIsQuoteModalOpen(true)} />
+      <TimedDiscountPopup onOpenQuote={() => setIsQuoteModalOpen(true)} />
     </div>
   );
 };
