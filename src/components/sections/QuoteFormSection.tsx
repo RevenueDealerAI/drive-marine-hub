@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Phone, Lock, Zap, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -33,6 +34,7 @@ export const QuoteFormSection = () => {
     notes: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -54,22 +56,7 @@ export const QuoteFormSection = () => {
 
       if (error) throw error;
 
-      toast({
-        title: "Quote Request Submitted!",
-        description: "We'll get back to you within 60 seconds during business hours.",
-      });
-      
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        vin: "",
-        year: "",
-        make: "",
-        model: "",
-        partNeeded: "engine",
-        notes: "",
-      });
+      navigate("/thank-you");
     } catch (error) {
       console.error("Error submitting quote:", error);
       toast({

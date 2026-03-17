@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Phone, Lock, Zap, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,6 +40,7 @@ export const QuoteModal = ({ isOpen, onClose, sourcePage = "modal" }: QuoteModal
     notes: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,23 +62,8 @@ export const QuoteModal = ({ isOpen, onClose, sourcePage = "modal" }: QuoteModal
 
       if (error) throw error;
 
-      toast({
-        title: "Quote Request Submitted!",
-        description: "We'll get back to you within 60 seconds during business hours.",
-      });
-      
       onClose();
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        vin: "",
-        year: "",
-        make: "",
-        model: "",
-        partNeeded: "engine",
-        notes: "",
-      });
+      navigate("/thank-you");
     } catch (error) {
       console.error("Error submitting quote:", error);
       toast({
