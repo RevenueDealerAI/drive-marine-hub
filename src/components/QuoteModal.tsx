@@ -47,7 +47,7 @@ export const QuoteModal = ({ isOpen, onClose, sourcePage = "modal" }: QuoteModal
     setIsSubmitting(true);
     
     try {
-      const { error } = await supabase.from("quote_requests").insert({
+      const { error } = await supabase.from("quotes").insert({
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -57,7 +57,6 @@ export const QuoteModal = ({ isOpen, onClose, sourcePage = "modal" }: QuoteModal
         model: formData.model || null,
         part_type: formData.partNeeded,
         message: formData.notes || null,
-        source_page: sourcePage,
       });
 
       if (error) throw error;

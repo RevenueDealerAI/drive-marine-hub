@@ -32,6 +32,7 @@ export const QuoteFormSection = () => {
     model: "",
     partNeeded: "engine",
     notes: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ export const QuoteFormSection = () => {
     setIsSubmitting(true);
     
     try {
-      const { error } = await supabase.from("quote_requests").insert({
+      const { error } = await supabase.from("quotes").insert({
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -51,7 +52,6 @@ export const QuoteFormSection = () => {
         model: formData.model || null,
         part_type: formData.partNeeded,
         message: formData.notes || null,
-        source_page: "homepage",
       });
 
       if (error) throw error;
