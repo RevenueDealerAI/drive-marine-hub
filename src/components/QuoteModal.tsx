@@ -62,23 +62,8 @@ export const QuoteModal = ({ isOpen, onClose, sourcePage = "modal" }: QuoteModal
 
       if (error) throw error;
 
-      toast({
-        title: "Quote Request Submitted!",
-        description: "We'll get back to you within 60 seconds during business hours.",
-      });
-      
       onClose();
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        vin: "",
-        year: "",
-        make: "",
-        model: "",
-        partNeeded: "engine",
-        notes: "",
-      });
+      navigate("/thank-you");
     } catch (error) {
       console.error("Error submitting quote:", error);
       toast({

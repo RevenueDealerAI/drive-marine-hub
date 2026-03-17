@@ -56,22 +56,7 @@ export const QuoteFormSection = () => {
 
       if (error) throw error;
 
-      toast({
-        title: "Quote Request Submitted!",
-        description: "We'll get back to you within 60 seconds during business hours.",
-      });
-      
-      setFormData({
-        name: "",
-        phone: "",
-        email: "",
-        vin: "",
-        year: "",
-        make: "",
-        model: "",
-        partNeeded: "engine",
-        notes: "",
-      });
+      navigate("/thank-you");
     } catch (error) {
       console.error("Error submitting quote:", error);
       toast({
