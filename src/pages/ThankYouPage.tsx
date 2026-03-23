@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { useState } from "react";
 import { QuoteModal } from "@/components/QuoteModal";
+import { SEOHead } from "@/components/SEOHead";
 
 const ThankYouPage = () => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
