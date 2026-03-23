@@ -97,6 +97,9 @@ const RefundPolicy = () => (
     lastUpdated="March 2026"
     description="We want you to be satisfied with your purchase. Please review our return and refund procedures below. All returns must be authorized before shipping."
     sections={sections}
+    seoTitle="Refund & Return Policy - DiscountAutoPartsUSA"
+    seoDescription="Return and refund policy for used engines and transmissions. 30-day return window, refund processing details, and how to initiate a return at Discount Auto Parts USA."
+    canonical="/refund-policy"
   />
 );
 

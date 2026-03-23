@@ -104,6 +104,9 @@ const TermsAndConditions = () => (
     lastUpdated="March 2026"
     description="Please read these Terms and Conditions carefully before using DiscountAutoPartsUSA.com. These terms govern your access to and use of our website and services."
     sections={sections}
+    seoTitle="Terms & Conditions - DiscountAutoPartsUSA"
+    seoDescription="Review the Terms and Conditions for using DiscountAutoPartsUSA.com. Covers product information, orders, payment, liability, and dispute resolution."
+    canonical="/terms-and-conditions"
   />
 );
 

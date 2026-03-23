@@ -71,6 +71,9 @@ const Disclaimer = () => (
     lastUpdated="March 2026"
     description="Please read this disclaimer carefully before using DiscountAutoPartsUSA.com. By using this website, you acknowledge and agree to the following terms."
     sections={sections}
+    seoTitle="Disclaimer - DiscountAutoPartsUSA"
+    seoDescription="Website disclaimer for Discount Auto Parts USA LLC. Independent supplier information, used auto parts conditions, and limitation of liability."
+    canonical="/disclaimer"
   />
 );
 
