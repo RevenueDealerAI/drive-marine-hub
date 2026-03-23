@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { QuoteModal } from "@/components/QuoteModal";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { SEOHead } from "@/components/SEOHead";
 
 interface LegalSection {
   title: string;
