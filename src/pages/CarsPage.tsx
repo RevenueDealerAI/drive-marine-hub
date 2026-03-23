@@ -50,6 +50,24 @@ const CarsPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Used Car Engines & Transmissions - Save 40-60% | DiscountAutoPartsUSA"
+        description="Buy tested, low-mileage used car engines and transmissions. Ford, Honda, Toyota, BMW & more. Free nationwide shipping, warranty included. Call 888-667-9660."
+        canonical="/cars"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Used Car Engines & Transmissions",
+          "description": "Certified low-mileage used car engines and transmissions with warranty and free nationwide shipping.",
+          "brand": { "@type": "Brand", "name": "Discount Auto Parts USA" },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "Discount Auto Parts USA LLC", "telephone": "+1-888-667-9660" }
+          }
+        }}
+      />
       <Navbar onOpenQuote={() => setIsQuoteModalOpen(true)} />
       
       <main>

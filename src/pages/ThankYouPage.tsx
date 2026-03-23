@@ -13,6 +13,11 @@ const ThankYouPage = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Thank You - Quote Submitted | DiscountAutoPartsUSA"
+        description="Your quote request has been submitted. Our parts specialist will contact you within 60 seconds during business hours. Call (888) 667-9660 for immediate help."
+        canonical="/thank-you"
+      />
       <Navbar onOpenQuote={() => setIsQuoteModalOpen(true)} />
 
       <main className="flex-1 flex items-center justify-center py-20 md:py-32">

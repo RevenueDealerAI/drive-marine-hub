@@ -51,6 +51,24 @@ const TrucksPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Used Truck & Diesel Engines - Cummins, Duramax, Powerstroke | DiscountAutoPartsUSA"
+        description="Buy heavy-duty used truck and diesel engines. Cummins, Duramax, Powerstroke, Allison transmissions. Free shipping, warranty included. Call 888-667-9660."
+        canonical="/trucks"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Used Truck & Diesel Engines",
+          "description": "Heavy-duty used truck engines including Cummins, Duramax, and Powerstroke with warranty and free nationwide shipping.",
+          "brand": { "@type": "Brand", "name": "Discount Auto Parts USA" },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "Discount Auto Parts USA LLC", "telephone": "+1-888-667-9660" }
+          }
+        }}
+      />
       <Navbar onOpenQuote={() => setIsQuoteModalOpen(true)} />
       
       <main>

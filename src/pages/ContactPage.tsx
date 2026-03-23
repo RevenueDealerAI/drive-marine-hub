@@ -21,6 +21,31 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact Us - DiscountAutoPartsUSA | Call (888) 667-9660"
+        description="Contact Discount Auto Parts USA for used engines and transmissions. Call (888) 667-9660 for instant quotes. Mon-Sat 9AM-6PM EST. Sheridan, WY."
+        canonical="/contact"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Discount Auto Parts USA",
+          "url": "https://discountautopartsusa.com/contact",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Discount Auto Parts USA LLC",
+            "telephone": "+1-888-667-9660",
+            "email": "support@discountautopartsusa.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "30 N Gould St, Ste R",
+              "addressLocality": "Sheridan",
+              "addressRegion": "WY",
+              "postalCode": "82801",
+              "addressCountry": "US"
+            }
+          }
+        }}
+      />
       <Navbar onOpenQuote={() => setIsQuoteModalOpen(true)} />
 
       <main>

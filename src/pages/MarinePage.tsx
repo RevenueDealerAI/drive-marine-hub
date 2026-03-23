@@ -51,6 +51,24 @@ const MarinePage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Used Marine & Boat Engines - Yamaha, Mercury, Volvo Penta | DiscountAutoPartsUSA"
+        description="Buy tested used marine and boat engines. Yamaha, Mercury, Suzuki, Volvo Penta. Outboard, inboard & sterndrive. Free shipping, warranty. Call 888-667-9660."
+        canonical="/marine"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Used Marine & Boat Engines",
+          "description": "Quality used marine engines including outboard, inboard, and sterndrive with warranty and nationwide shipping.",
+          "brand": { "@type": "Brand", "name": "Discount Auto Parts USA" },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": { "@type": "Organization", "name": "Discount Auto Parts USA LLC", "telephone": "+1-888-667-9660" }
+          }
+        }}
+      />
       <Navbar onOpenQuote={() => setIsQuoteModalOpen(true)} />
       
       <main>
