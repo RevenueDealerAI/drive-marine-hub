@@ -44,6 +44,7 @@ export const LegalPageLayout = ({
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title={seoTitle} description={seoDescription} canonical={canonical} />
       <Navbar onOpenQuote={() => setIsQuoteModalOpen(true)} />
 
       <main>
