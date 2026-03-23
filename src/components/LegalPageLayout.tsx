@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/sections/Footer";
 import { QuoteModal } from "@/components/QuoteModal";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { SEOHead } from "@/components/SEOHead";
 
 interface LegalSection {
   title: string;
@@ -21,6 +22,9 @@ interface LegalPageLayoutProps {
   description: string;
   sections: LegalSection[];
   children?: ReactNode;
+  seoTitle: string;
+  seoDescription: string;
+  canonical: string;
 }
 
 export const LegalPageLayout = ({
@@ -32,11 +36,15 @@ export const LegalPageLayout = ({
   description,
   sections,
   children,
+  seoTitle,
+  seoDescription,
+  canonical,
 }: LegalPageLayoutProps) => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead title={seoTitle} description={seoDescription} canonical={canonical} />
       <Navbar onOpenQuote={() => setIsQuoteModalOpen(true)} />
 
       <main>

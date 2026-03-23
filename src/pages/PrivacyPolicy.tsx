@@ -136,6 +136,9 @@ const PrivacyPolicy = () => (
     lastUpdated="March 2026"
     description="At Discount Auto Parts USA LLC, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information."
     sections={sections}
+    seoTitle="Privacy Policy - DiscountAutoPartsUSA"
+    seoDescription="Read the Privacy Policy of Discount Auto Parts USA LLC. Learn how we collect, use, and protect your personal information when you use our website and services."
+    canonical="/privacy-policy"
   />
 );
 

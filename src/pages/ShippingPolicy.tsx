@@ -94,6 +94,9 @@ const ShippingPolicy = () => (
     lastUpdated="March 2026"
     description="We ship used engines, transmissions, and auto parts nationwide across the United States. Please review our shipping procedures and delivery expectations below."
     sections={sections}
+    seoTitle="Shipping & Delivery Policy - Free Nationwide Shipping | DiscountAutoPartsUSA"
+    seoDescription="Shipping policy for used engines and transmissions. Free nationwide delivery, freight shipping details, estimated delivery times, and damage reporting procedures."
+    canonical="/shipping-policy"
   />
 );
 

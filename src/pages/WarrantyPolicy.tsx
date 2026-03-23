@@ -82,6 +82,9 @@ const WarrantyPolicy = () => (
     lastUpdated="March 2026"
     description="Discount Auto Parts USA LLC stands behind the quality of our used engines and transmissions. Warranty coverage varies by part type and is subject to the terms outlined below."
     sections={sections}
+    seoTitle="Warranty Policy - Used Engines & Transmissions | DiscountAutoPartsUSA"
+    seoDescription="Warranty coverage details for used engines and transmissions from Discount Auto Parts USA. Up to 3 years coverage, claim procedures, and installation requirements."
+    canonical="/warranty-policy"
   />
 );
 
