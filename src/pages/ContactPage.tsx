@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SEOHead } from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Headphones, Cog, Waves, Truck, ShieldCheck, HelpCircle } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
