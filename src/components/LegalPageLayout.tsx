@@ -36,6 +36,9 @@ export const LegalPageLayout = ({
   description,
   sections,
   children,
+  seoTitle,
+  seoDescription,
+  canonical,
 }: LegalPageLayoutProps) => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
