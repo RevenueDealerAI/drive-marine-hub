@@ -36,27 +36,7 @@ export const FloatingCTA = ({ onOpenQuote }: FloatingCTAProps) => {
         </div>
       )}
 
-      {/* Desktop floating quote button */}
-      <AnimatePresence>
-        {isVisible && !isMobile && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            className="fixed bottom-6 right-6 z-40"
-          >
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={onOpenQuote}
-              className="rounded-full shadow-elevated"
-            >
-              <MessageSquare className="w-5 h-5" />
-              <span>Get Quote</span>
-            </Button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Desktop floating quote button removed - Crisp chatbot occupies this space */}
     </>
   );
 };
