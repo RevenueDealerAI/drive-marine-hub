@@ -22,6 +22,9 @@ interface LegalPageLayoutProps {
   description: string;
   sections: LegalSection[];
   children?: ReactNode;
+  seoTitle: string;
+  seoDescription: string;
+  canonical: string;
 }
 
 export const LegalPageLayout = ({
