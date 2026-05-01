@@ -42,10 +42,10 @@ const Index = () => {
           "email": "support@discountautopartsusa.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "30 N Gould St, Ste R",
-            "addressLocality": "Sheridan",
-            "addressRegion": "WY",
-            "postalCode": "82801",
+            "streetAddress": "10301 Northwest Fwy",
+            "addressLocality": "Houston",
+            "addressRegion": "TX",
+            "postalCode": "77092",
             "addressCountry": "US"
           },
           "openingHoursSpecification": {

@@ -23,7 +23,7 @@ const ContactPage = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact Us - DiscountAutoPartsUSA | Call (888) 667-9660"
-        description="Contact Discount Auto Parts USA for used engines and transmissions. Call (888) 667-9660 for instant quotes. Mon-Sat 9AM-6PM EST. Sheridan, WY."
+        description="Contact Discount Auto Parts USA for used engines and transmissions. Call (888) 667-9660 for instant quotes. Mon-Sat 9AM-6PM EST. Houston, TX."
         canonical="/contact"
         jsonLd={{
           "@context": "https://schema.org",
@@ -37,10 +37,10 @@ const ContactPage = () => {
             "email": "support@discountautopartsusa.com",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "30 N Gould St, Ste R",
-              "addressLocality": "Sheridan",
-              "addressRegion": "WY",
-              "postalCode": "82801",
+              "streetAddress": "10301 Northwest Fwy",
+              "addressLocality": "Houston",
+              "addressRegion": "TX",
+              "postalCode": "77092",
               "addressCountry": "US"
             }
           }
@@ -115,8 +115,9 @@ const ContactPage = () => {
                         <h3 className="font-bold text-foreground mb-1">Business Address</h3>
                         <p className="text-foreground/80">
                           Discount Auto Parts USA LLC<br />
-                          30 N Gould St, Ste R<br />
-                          Sheridan, WY 82801<br />
+                          
+                          10301 Northwest Fwy<br />
+                          Houston, TX 77092<br />
                           United States
                         </p>
                       </div>

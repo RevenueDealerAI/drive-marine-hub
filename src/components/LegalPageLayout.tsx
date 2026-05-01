@@ -120,8 +120,8 @@ export const LegalPageLayout = ({
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>
                     Discount Auto Parts USA LLC<br />
-                    30 N Gould St, Ste R<br />
-                    Sheridan, WY 82801, United States
+                    10301 Northwest Fwy<br />
+                    Houston, TX 77092, USA
                   </span>
                 </div>
                 <p className="text-sm text-foreground/60">
