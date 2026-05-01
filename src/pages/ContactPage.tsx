@@ -115,7 +115,7 @@ const ContactPage = () => {
                         <h3 className="font-bold text-foreground mb-1">Business Address</h3>
                         <p className="text-foreground/80">
                           Discount Auto Parts USA LLC<br />
-                          30 N Gould St, Ste R<br />
+                          
                           10301 Northwest Fwy<br />
                           Houston, TX 77092<br />
                           United States
