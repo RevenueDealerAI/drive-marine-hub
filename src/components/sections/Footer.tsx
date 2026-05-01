@@ -41,7 +41,7 @@ export const Footer = () => {
             </p>
             <div className="flex items-start gap-2 text-sm text-primary-foreground/50">
               <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-              <span>30 N Gould St, Ste R<br />Sheridan, WY 82801</span>
+              <span>10301 Northwest Fwy<br />Houston, TX 77092, USA</span>
             </div>
           </div>
 

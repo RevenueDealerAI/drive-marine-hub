@@ -23,7 +23,7 @@ const ContactPage = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title="Contact Us - DiscountAutoPartsUSA | Call (888) 667-9660"
-        description="Contact Discount Auto Parts USA for used engines and transmissions. Call (888) 667-9660 for instant quotes. Mon-Sat 9AM-6PM EST. Sheridan, WY."
+        description="Contact Discount Auto Parts USA for used engines and transmissions. Call (888) 667-9660 for instant quotes. Mon-Sat 9AM-6PM EST. Houston, TX."
         canonical="/contact"
         jsonLd={{
           "@context": "https://schema.org",
