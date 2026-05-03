@@ -22,7 +22,7 @@ export const AboutSection = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              For over a decade, DiscountAutoPartsUSA has been the go-to source for quality used engines and transmissions. Our family-owned business has grown from a small operation to serving customers in all 50 states.
+              For over a decade, DiscountAutoPartUSA has been the go-to source for quality used engines and transmissions. Our family-owned business has grown from a small operation to serving customers in all 50 states.
             </p>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

@@ -40,7 +40,7 @@ jobs:
 
     # 6. CLEAN OLD FILES from public_html
     - name: Clean old build
-      run: ssh -i id_rsa -o StrictHostKeyChecking=no root@${{ secrets.VPS_HOST }} "rm -rf /home/discountautopartsusa/public_html/*"
+      run: ssh -i id_rsa -o StrictHostKeyChecking=no root@${{ secrets.VPS_HOST }} "rm -rf /home/discountautopartusa/public_html/*"
 
     # 7. Copy new build to server
     - name: Copy build to server

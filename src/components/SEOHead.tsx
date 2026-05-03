@@ -9,7 +9,7 @@ interface SEOHeadProps {
   jsonLd?: object;
 }
 
-const BASE_URL = "https://discountautopartsusa.com";
+const BASE_URL = "https://discountautopartusa.com";
 
 export const SEOHead = ({
   title,

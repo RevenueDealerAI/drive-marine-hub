@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://discountautopartsusa.com/sitemap.xml
+Sitemap: https://discountautopartusa.com/sitemap.xml

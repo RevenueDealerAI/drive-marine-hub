@@ -78,7 +78,7 @@ const sections = [
     icon: FileText,
     content: [
       "To start a return:",
-      "1. Call our customer support at (888) 667-9660 or email support@discountautopartsusa.com",
+      "1. Call our customer support at (888) 667-9660 or email support@discountautopartusa.com",
       "2. Provide your order number and reason for return",
       "3. Receive a Return Authorization (RA) number",
       "4. Ship the part back using a trackable shipping method",
@@ -97,7 +97,7 @@ const RefundPolicy = () => (
     lastUpdated="March 2026"
     description="We want you to be satisfied with your purchase. Please review our return and refund procedures below. All returns must be authorized before shipping."
     sections={sections}
-    seoTitle="Refund & Return Policy - DiscountAutoPartsUSA"
+    seoTitle="Refund & Return Policy - discountautopartusa"
     seoDescription="Return and refund policy for used engines and transmissions. 30-day return window, refund processing details, and how to initiate a return at Discount Auto Parts USA."
     canonical="/refund-policy"
   />

@@ -28,18 +28,18 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="DiscountAutoPartsUSA - Quality Used Engines & Transmissions"
+        title="DiscountAutoPartUSA - Quality Used Engines & Transmissions"
         description="Save 40-60% on certified, low-mileage OEM engines and transmissions. Free nationwide shipping, warranty included. Cars, trucks, and marine engines. Call 888-667-9660."
         canonical="/"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "AutoPartsStore",
           "name": "Discount Auto Parts USA LLC",
-          "url": "https://discountautopartsusa.com",
-          "logo": "https://discountautopartsusa.com/og-image.png",
+          "url": "https://discountautopartusa.com",
+          "logo": "https://discountautopartusa.com/og-image.png",
           "description": "Quality used engines and transmissions for cars, trucks, and boats. Save 40-60% with free nationwide shipping and warranty options.",
           "telephone": "+1-888-667-9660",
-          "email": "support@discountautopartsusa.com",
+          "email": "support@discountautopartusa.com",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "10301 Northwest Fwy",

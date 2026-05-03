@@ -14,7 +14,7 @@ const ThankYouPage = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
-        title="Thank You - Quote Submitted | DiscountAutoPartsUSA"
+        title="Thank You - Quote Submitted | discountautopartusa"
         description="Your quote request has been submitted. Our parts specialist will contact you within 60 seconds during business hours. Call (888) 667-9660 for immediate help."
         canonical="/thank-you"
       />

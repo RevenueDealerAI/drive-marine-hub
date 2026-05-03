@@ -22,19 +22,19 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Contact Us - DiscountAutoPartsUSA | Call (888) 667-9660"
+        title="Contact Us - DiscountAutoPartUSA | Call (888) 667-9660"
         description="Contact Discount Auto Parts USA for used engines and transmissions. Call (888) 667-9660 for instant quotes. Mon-Sat 9AM-6PM EST. Houston, TX."
         canonical="/contact"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
           "name": "Contact Discount Auto Parts USA",
-          "url": "https://discountautopartsusa.com/contact",
+          "url": "https://discountautopartusa.com/contact",
           "mainEntity": {
             "@type": "Organization",
             "name": "Discount Auto Parts USA LLC",
             "telephone": "+1-888-667-9660",
-            "email": "support@discountautopartsusa.com",
+            "email": "support@discountautopartusa.com",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "10301 Northwest Fwy",
@@ -102,8 +102,8 @@ const ContactPage = () => {
                       <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-bold text-foreground mb-1">Email</h3>
-                        <a href="mailto:support@discountautopartsusa.com" className="text-primary hover:underline break-all">
-                          support@discountautopartsusa.com
+                        <a href="mailto:support@discountautopartusa.com" className="text-primary hover:underline break-all">
+                          support@discountautopartusa.com
                         </a>
                         <p className="text-sm text-muted-foreground mt-1">We respond within 1 business day</p>
                       </div>

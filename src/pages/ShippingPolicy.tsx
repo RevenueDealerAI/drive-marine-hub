@@ -54,7 +54,7 @@ const sections = [
       "If your shipment arrives damaged:",
       "1. Do NOT refuse the delivery — accept it and note damage on the carrier's paperwork",
       "2. Take clear photographs of all damage (packaging and part)",
-      "3. Contact us immediately at (888) 667-9660 or email support@discountautopartsusa.com",
+      "3. Contact us immediately at (888) 667-9660 or email support@discountautopartusa.com",
       "4. Keep all original packaging materials for potential carrier inspection",
       "5. We will work with the carrier to file a freight claim and arrange a resolution",
       "Damage claims must be reported within 48 hours of delivery.",
@@ -94,7 +94,7 @@ const ShippingPolicy = () => (
     lastUpdated="March 2026"
     description="We ship used engines, transmissions, and auto parts nationwide across the United States. Please review our shipping procedures and delivery expectations below."
     sections={sections}
-    seoTitle="Shipping & Delivery Policy - Free Nationwide Shipping | DiscountAutoPartsUSA"
+    seoTitle="Shipping & Delivery Policy - Free Nationwide Shipping | discountautopartusa"
     seoDescription="Shipping policy for used engines and transmissions. Free nationwide delivery, freight shipping details, estimated delivery times, and damage reporting procedures."
     canonical="/shipping-policy"
   />

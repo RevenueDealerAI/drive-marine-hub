@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <SEOHead
-        title="Page Not Found - DiscountAutoPartsUSA"
+        title="Page Not Found - discountautopartusa"
         description="The page you're looking for doesn't exist. Browse our used engines and transmissions or call (888) 667-9660 for help."
         canonical={location.pathname}
       />

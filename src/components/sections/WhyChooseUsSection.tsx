@@ -69,7 +69,7 @@ export const WhyChooseUsSection = () => {
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Why Thousands Trust{" "}
-            <span className="text-primary">DiscountAutoPartsUSA</span>
+            <span className="text-primary">discountautopartusa</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We've delivered over 15,000 engines with a 98% satisfaction rate. Here's why customers choose us.

@@ -100,7 +100,7 @@ const sections = [
       "• Opt out of marketing communications",
       "• Opt out of personalized advertising",
       "• Disable cookies through your browser settings",
-      "To exercise these rights, please contact us at support@discountautopartsusa.com or call (888) 667-9660.",
+      "To exercise these rights, please contact us at support@discountautopartusa.com or call (888) 667-9660.",
       "We comply with applicable United States privacy regulations.",
     ],
   },
@@ -136,7 +136,7 @@ const PrivacyPolicy = () => (
     lastUpdated="March 2026"
     description="At Discount Auto Parts USA LLC, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information."
     sections={sections}
-    seoTitle="Privacy Policy - DiscountAutoPartsUSA"
+    seoTitle="Privacy Policy - discountautopartusa"
     seoDescription="Read the Privacy Policy of Discount Auto Parts USA LLC. Learn how we collect, use, and protect your personal information when you use our website and services."
     canonical="/privacy-policy"
   />

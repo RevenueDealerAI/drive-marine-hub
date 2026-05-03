@@ -51,7 +51,7 @@ const CarsPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Used Car Engines & Transmissions - Save 40-60% | DiscountAutoPartsUSA"
+        title="Used Car Engines & Transmissions - Save 40-60% | discountautopartusa"
         description="Buy tested, low-mileage used car engines and transmissions. Ford, Honda, Toyota, BMW & more. Free nationwide shipping, warranty included. Call 888-667-9660."
         canonical="/cars"
         jsonLd={{

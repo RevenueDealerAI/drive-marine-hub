@@ -52,7 +52,7 @@ const MarinePage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Used Marine & Boat Engines - Yamaha, Mercury, Volvo Penta | DiscountAutoPartsUSA"
+        title="Used Marine & Boat Engines - Yamaha, Mercury, Volvo Penta | DiscountAutoPartUSA"
         description="Buy tested used marine and boat engines. Yamaha, Mercury, Suzuki, Volvo Penta. Outboard, inboard & sterndrive. Free shipping, warranty. Call 888-667-9660."
         canonical="/marine"
         jsonLd={{

@@ -6,7 +6,7 @@ const sections = [
     title: "Acceptance of Terms",
     icon: CheckCircle,
     content: [
-      "By accessing and using DiscountAutoPartsUSA.com, you accept and agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website or services.",
+      "By accessing and using discountautopartusa.com, you accept and agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website or services.",
       "We reserve the right to modify these terms at any time. Your continued use of the website after changes are posted constitutes acceptance of the modified terms.",
     ],
   },
@@ -82,7 +82,7 @@ const sections = [
     title: "Dispute Resolution",
     icon: Scale,
     content: [
-      "If a dispute arises from your use of our website or services, we encourage you to contact us first at support@discountautopartsusa.com to attempt resolution.",
+      "If a dispute arises from your use of our website or services, we encourage you to contact us first at support@discountautopartusa.com to attempt resolution.",
       "If a dispute cannot be resolved informally, it shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association.",
     ],
   },
@@ -102,10 +102,10 @@ const TermsAndConditions = () => (
     title="Terms &"
     titleHighlight="Conditions"
     lastUpdated="March 2026"
-    description="Please read these Terms and Conditions carefully before using DiscountAutoPartsUSA.com. These terms govern your access to and use of our website and services."
+    description="Please read these Terms and Conditions carefully before using discountautopartusa.com. These terms govern your access to and use of our website and services."
     sections={sections}
-    seoTitle="Terms & Conditions - DiscountAutoPartsUSA"
-    seoDescription="Review the Terms and Conditions for using DiscountAutoPartsUSA.com. Covers product information, orders, payment, liability, and dispute resolution."
+    seoTitle="Terms & Conditions - discountautopartusa"
+    seoDescription="Review the Terms and Conditions for using discountautopartusa.com. Covers product information, orders, payment, liability, and dispute resolution."
     canonical="/terms-and-conditions"
   />
 );

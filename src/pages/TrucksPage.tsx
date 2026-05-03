@@ -52,7 +52,7 @@ const TrucksPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Used Truck & Diesel Engines - Cummins, Duramax, Powerstroke | DiscountAutoPartsUSA"
+        title="Used Truck & Diesel Engines - Cummins, Duramax, Powerstroke | discountautopartusa"
         description="Buy heavy-duty used truck and diesel engines. Cummins, Duramax, Powerstroke, Allison transmissions. Free shipping, warranty included. Call 888-667-9660."
         canonical="/trucks"
         jsonLd={{

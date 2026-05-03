@@ -84,9 +84,9 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:support@discountautopartsusa.com" className="flex items-start gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors break-all">
+                <a href="mailto:support@discountautopartusa.com" className="flex items-start gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors break-all">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                  <span className="break-all">support@discountautopartsusa.com</span>
+                  <span className="break-all">support@discountautopartusa.com</span>
                 </a>
               </li>
             </ul>

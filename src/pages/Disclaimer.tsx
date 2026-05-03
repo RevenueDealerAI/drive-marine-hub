@@ -15,7 +15,7 @@ const sections = [
     title: "Website Information",
     icon: Info,
     content: [
-      "The information provided on DiscountAutoPartsUSA.com is for general informational purposes only:",
+      "The information provided on discountautopartusa.com is for general informational purposes only:",
       "• Product listings, descriptions, and images are for reference and may not represent the exact part you receive",
       "• Availability, pricing, and specifications are subject to change without notice",
       "• All pricing must be confirmed by calling (888) 667-9660 or through an official invoice",
@@ -69,9 +69,9 @@ const Disclaimer = () => (
     title="Website"
     titleHighlight="Disclaimer"
     lastUpdated="March 2026"
-    description="Please read this disclaimer carefully before using DiscountAutoPartsUSA.com. By using this website, you acknowledge and agree to the following terms."
+    description="Please read this disclaimer carefully before using discountautopartusa.com. By using this website, you acknowledge and agree to the following terms."
     sections={sections}
-    seoTitle="Disclaimer - DiscountAutoPartsUSA"
+    seoTitle="Disclaimer - discountautopartusa"
     seoDescription="Website disclaimer for Discount Auto Parts USA LLC. Independent supplier information, used auto parts conditions, and limitation of liability."
     canonical="/disclaimer"
   />
