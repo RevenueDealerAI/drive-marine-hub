@@ -55,7 +55,7 @@ export const InventoryShowcaseSection = () => {
                 {item.condition}
               </div>
               <Button variant="default" size="sm" className="w-full" asChild>
-                <a href="tel:18886679660">
+                <a href="tel:18664208266">
                   <Phone className="w-4 h-4" />
                   Call for Best Price
                 </a>
@@ -74,11 +74,11 @@ export const InventoryShowcaseSection = () => {
             Inventory changes frequently. Call now to check availability.
           </p>
           <a
-            href="tel:18886679660"
+            href="tel:18664208266"
             className="text-xl font-bold text-primary hover:underline flex items-center justify-center gap-2"
           >
             <Phone className="w-5 h-5" />
-            (888) 667-9660
+            (866) 420-8266
           </a>
         </motion.div>
       </div>

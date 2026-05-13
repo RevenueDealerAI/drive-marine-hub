@@ -11,11 +11,11 @@ export const ConversionMessageSection = () => {
           Call Discount Auto Parts USA today to check availability and receive a competitive quote.
         </p>
         <a
-          href="tel:18886679660"
+          href="tel:18664208266"
           className="inline-flex items-center gap-2 text-xl font-bold text-primary hover:underline"
         >
           <Phone className="w-5 h-5" />
-          (888) 667-9660
+          (866) 420-8266
         </a>
       </div>
     </section>

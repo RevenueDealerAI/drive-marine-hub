@@ -37,9 +37,9 @@ export const ClosingCTASection = ({ onOpenQuote }: ClosingCTASectionProps) => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button variant="cta" size="xl" asChild>
-              <a href="tel:18886679660" className="flex items-center gap-2">
+              <a href="tel:18664208266" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call Now – (888) 667-9660
+                Call Now – (866) 420-8266
               </a>
             </Button>
             <Button

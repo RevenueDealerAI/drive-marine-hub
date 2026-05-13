@@ -63,9 +63,9 @@ export const ExitIntentPopup = ({ onOpenQuote }: ExitIntentPopupProps) => {
             </p>
             <div className="flex flex-col gap-3">
               <Button variant="cta" size="lg" asChild>
-                <a href="tel:18886679660">
+                <a href="tel:18664208266">
                   <Phone className="w-5 h-5" />
-                  Call (888) 667-9660
+                  Call (866) 420-8266
                 </a>
               </Button>
               <Button

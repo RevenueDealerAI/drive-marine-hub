@@ -78,9 +78,9 @@ export const Footer = () => {
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:18886679660" className="flex items-center gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors">
+                <a href="tel:18664208266" className="flex items-center gap-2 text-sm text-primary-foreground/60 hover:text-primary transition-colors">
                   <Phone className="w-4 h-4 flex-shrink-0" />
-                  (888) 667-9660
+                  (866) 420-8266
                 </a>
               </li>
               <li>

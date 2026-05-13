@@ -112,9 +112,9 @@ export const LegalPageLayout = ({
                   <Mail className="w-5 h-5 text-primary" />
                   <span>support@discountautopartusa.com</span>
                 </a>
-                <a href="tel:18886679660" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
+                <a href="tel:18664208266" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>(888) 667-9660</span>
+                  <span>(866) 420-8266</span>
                 </a>
                 <div className="flex items-start gap-3 text-sm text-foreground/60 mt-4">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />

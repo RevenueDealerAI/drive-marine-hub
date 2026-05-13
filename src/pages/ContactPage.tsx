@@ -22,8 +22,8 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Contact Us - DiscountAutoPartUSA | Call (888) 667-9660"
-        description="Contact Discount Auto Parts USA for used engines and transmissions. Call (888) 667-9660 for instant quotes. Mon-Sat 9AM-6PM EST. Houston, TX."
+        title="Contact Us - DiscountAutoPartUSA | Call (866) 420-8266"
+        description="Contact Discount Auto Parts USA for used engines and transmissions. Call (866) 420-8266 for instant quotes. Mon-Sat 9AM-6PM EST. Houston, TX."
         canonical="/contact"
         jsonLd={{
           "@context": "https://schema.org",
@@ -33,7 +33,7 @@ const ContactPage = () => {
           "mainEntity": {
             "@type": "Organization",
             "name": "Discount Auto Parts USA LLC",
-            "telephone": "+1-888-667-9660",
+            "telephone": "+1-866-420-8266",
             "email": "support@discountautopartusa.com",
             "address": {
               "@type": "PostalAddress",
@@ -91,8 +91,8 @@ const ContactPage = () => {
                       <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <h3 className="font-bold text-foreground mb-1">Phone</h3>
-                        <a href="tel:18886679660" className="text-lg font-semibold text-primary hover:underline">
-                          (888) 667-9660
+                        <a href="tel:18664208266" className="text-lg font-semibold text-primary hover:underline">
+                          (866) 420-8266
                         </a>
                         <p className="text-sm text-muted-foreground mt-1">Call for fastest assistance</p>
                       </div>
@@ -152,9 +152,9 @@ const ContactPage = () => {
                   </p>
                   <div className="flex flex-col gap-3">
                     <Button variant="cta" size="lg" asChild>
-                      <a href="tel:18886679660">
+                      <a href="tel:18664208266">
                         <Phone className="w-5 h-5" />
-                        Call (888) 667-9660
+                        Call (866) 420-8266
                       </a>
                     </Button>
                     <Button variant="outline" size="lg" onClick={() => setIsQuoteModalOpen(true)}>
